@@ -15,7 +15,7 @@ const handleDuplicateFieldsDB = (err) => {
 const handleValidationErrorDB = (err) => {
   const errors = Object.values(err.errors).map((el) => el.message);
 
-  console.log(errors);
+  // console.log(errors);
 
   const message = `Invalid input data: ${errors.join('. ')}`;
   return new AppError(message, 400);
@@ -58,8 +58,9 @@ const sendErrorProd = (err, req, res) => {
       //Programming or unknown error: don't leak details to the client
     }
 
+    console.error('ERROR🔥🔥', err);
+
     //2. Send generic message
-    console.log(err);
     return res.status(500).json({
       status: 'error',
       message: 'Something went wrong',
