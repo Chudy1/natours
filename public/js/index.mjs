@@ -2,7 +2,7 @@
 import { displayMap } from './mapbox.mjs';
 import { login, logout } from './login.mjs';
 import { bookTour } from './stripe.mjs';
-import { updateSettings } from './updateSettings';
+import { updateSettings } from './updateSettings.mjs';
 
 //DOM ELEMENT
 const mapBox = document.getElementById('map');
