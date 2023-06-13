@@ -1,6 +1,6 @@
 /* eslint-disable */
 import axios from 'axios';
-import { showAlert } from './alert.mjs';
+import { showAlert } from './alert.js';
 
 // type is either 'password' or 'data'
 export const updateSettings = async (data, type) => {
