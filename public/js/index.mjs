@@ -1,7 +1,7 @@
 /* eslint-disable */
-import { displayMap } from './mapbox';
-import { login, logout } from './login';
-import { bookTour } from './stripe';
+import { displayMap } from './mapbox.mjs';
+import { login, logout } from './login.mjs';
+import { bookTour } from './stripe.mjs';
 import { updateSettings } from './updateSettings';
 
 //DOM ELEMENT
