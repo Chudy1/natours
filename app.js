@@ -29,10 +29,8 @@ app.set('views', path.join(__dirname, 'views'));
 // app.use(express.static(`${__dirname}/public`));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Trial
-// app.get('/', (req, res) => {
-//   res.render('base');
-// });
+//Trial
+app.use('/js', express.static(path.join(__dirname, 'public/js')));
 
 // Set security http header
 app.use(helmet());
