@@ -7,8 +7,8 @@
     "start:dev": "nodemon server.js",
     "start:prod": "set NODE_ENV=production&&nodemon server.js",
     "debug": "ndb server.js",
-    "watch:js": "esbuild ./public/js/index.mjs --bundle --outfile=./public/js/bundle.js --watch",
-    "build:js": "esbuild ./public/js/index.mjs --bundle --outfile=./public/js/bundle.js"
+    "watch:js": "esbuild ./public/js/index.js --bundle --outfile=./public/js/bundle.js --watch",
+    "build:js": "esbuild ./public/js/index.js --bundle --outfile=./public/js/bundle.js"
   },
   "author": "Chudy",
   "license": "ISC",

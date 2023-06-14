@@ -1,5 +1,5 @@
 (() => {
-  // public/js/mapbox.mjs
+  // public/js/mapbox.js
   var displayMap = (locations) => {
     mapboxgl.accessToken = // 'pk.eyJ1IjoiY2h1ZHl5IiwiYSI6ImNsaTM1bjMxNDB4dHUzam80NjY0Y3ExOGoifQ.5P3EU5iXuQmaLhz6YscASw';
     "pk.eyJ1IjoiY2h1ZHl5IiwiYSI6ImNsaTM0c3JtNzBzcDYzdmxweTI3dXBuOGIifQ.3cMHyxsqucctd-njDXFm4g";
@@ -2140,7 +2140,7 @@
     mergeConfig: mergeConfig2
   } = axios_default;
 
-  // public/js/alert.mjs
+  // public/js/alert.js
   var hideAlert = () => {
     const el = document.querySelector(".alert");
     if (el)
@@ -2153,7 +2153,7 @@
     window.setTimeout(hideAlert, 5e3);
   };
 
-  // public/js/login.mjs
+  // public/js/login.js
   var login = async (email, password) => {
     try {
       const res = await axios_default({
@@ -2292,7 +2292,7 @@
     });
   };
 
-  // public/js/stripe.mjs
+  // public/js/stripe.js
   var bookTour = async (tourId) => {
     try {
       const stripe = await loadStripe(
@@ -2307,7 +2307,7 @@
     }
   };
 
-  // public/js/updateSettings.mjs
+  // public/js/updateSettings.js
   var updateSettings = async (data, type) => {
     try {
       const url = type === "password" ? "/api/v1/users/update-my-password" : "/api/v1/users/updateMe";
@@ -2324,7 +2324,7 @@
     }
   };
 
-  // public/js/index.mjs
+  // public/js/index.js
   var mapBox = document.getElementById("map");
   var loginForm = document.querySelector(".form--login");
   var logoutBtn = document.querySelector(".nav__el--logout");

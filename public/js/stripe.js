@@ -1,6 +1,6 @@
 /*eslint-disable */
 import axios from 'axios';
-import { showAlert } from './alert.mjs';
+import { showAlert } from './alert.js';
 import { loadStripe } from '@stripe/stripe-js';
 
 // const stripe = Stripe(

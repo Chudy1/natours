@@ -1,8 +1,8 @@
 /* eslint-disable */
-import { displayMap } from './mapbox.mjs';
-import { login, logout } from './login.mjs';
-import { bookTour } from './stripe.mjs';
-import { updateSettings } from './updateSettings.mjs';
+import { displayMap } from './mapbox.js';
+import { login, logout } from './login.js';
+import { bookTour } from './stripe.js';
+import { updateSettings } from './updateSettings.js';
 
 //DOM ELEMENT
 const mapBox = document.getElementById('map');
