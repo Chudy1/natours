@@ -3,15 +3,12 @@
   "version": "1.0.0",
   "description": "Learning Node, Express and MongoDb",
   "main": "app.js",
-  "targets": {
-    "main": false
-  },
   "scripts": {
     "start:dev": "nodemon server.js",
     "start:prod": "set NODE_ENV=production&&nodemon server.js",
     "debug": "ndb server.js",
-    "watch:js": "parcel watch ./public/js/index.js --dist-dir ./public/js/bundled",
-    "build:js": "parcel build ./public/js/index.js --dist-dir ./public/js/bundled"
+    "watch:js": "esbuild ./public/js/index.js --bundle --outfile=./public/js/bundle.js --sourcemap --watch",
+    "build:js": "esbuild ./public/js/index.js --bundle --outfile=./public/js/bundle.js --sourcemap"
   },
   "author": "Chudy",
   "license": "ISC",
@@ -53,7 +50,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
-    "parcel": "^2.9.2",
     "prettier": "^2.8.7"
   },
   "engines": {
