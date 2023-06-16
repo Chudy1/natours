@@ -39,7 +39,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/js', express.static(path.join(__dirname, 'public/js')));
 
 // Set security http header
-app.use(helmet());
+app.use(
+  helmet({
+    useDefaults: true,
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        connectSrc: ["'self'", 'natours-tours-2.onrender.com'],
+        scriptSrc: ["'self'"],
+      },
+    },
+  })
+);
 
 //Development logging
 if (process.env.NODE_ENV === 'development') {
